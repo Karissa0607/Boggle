@@ -1,0 +1,75 @@
+/*
+ * This css file holds all the button style for main window and pop-up windows of BoggleUI.
+ */
+ 
+/* Default button for the grid */
+.button {
+	-fx-focus-color: transparent;
+	-fx-background-insets: -1, 0, 1, 1;
+	-fx-font-weight: bold;
+    -fx-font-size: 75;
+    -fx-text-fill: red;
+}
+
+/* Default button for other button */
+.buttonOther {
+	-fx-focus-color: transparent;
+	-fx-background-insets: -1, 0, 1, 1;
+	-fx-font-weight: bold;
+    -fx-font-size: 40;
+    -fx-text-fill: green;
+}
+
+/* Default button for other button with small text */
+.buttonOtherSmall {
+	-fx-focus-color: transparent;
+	-fx-background-insets: -1, 0, 1, 1;
+	-fx-font-weight: bold;
+    -fx-font-size: 20;
+    -fx-text-fill: green;
+}
+
+/* Highlight the buttons on the grid */
+.highlight1 {
+	-fx-background-color:
+        radial-gradient(center 50% 50%, radius 100%, #e5ff00, #ffb300); /* Golden shine */
+	-fx-font-weight: bold;
+    -fx-font-size: 85;
+    -fx-text-fill: red;
+}
+
+/* Highlight the buttons on the grid, in a different way */
+.highlight2 {
+	-fx-font-weight: bold;
+    -fx-font-size: 85;
+    -fx-text-fill: #00c434;
+}
+
+/* Remove the highlight of a button when it is has the cursor on top or clicked to indicate that it is occupied */
+.remove-highlight {
+	-fx-color: -fx-base;
+}
+
+/* Button style used for the pop-up windows */
+#popup{
+	-fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 90% to 0% 90%, #3e8e3e 0%, #3e8e3e 100%), /* Color on the side*/
+        #3e8e3e, #3e8e3e, /* Color on the edge*/
+        radial-gradient(center 50% 50%, radius 100%, #6fd26f, #3e8e3e); /* Color on the top*/
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-text-fill: #183d18;
+    -fx-font-size: 22;
+}
+#popup:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 90% to 0% 90%, #46a246 0%, #46a246 100%), /* Color on the side*/
+        #46a246, #46a246, /* Color on the ledge*/
+        radial-gradient(center 50% 50%, radius 150%, #6fd26f, #3c883c); /* Color on the top*/
+}
+#popup:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}

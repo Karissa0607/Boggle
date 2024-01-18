@@ -1,0 +1,1 @@
+Implementation of the Boggle game using javafx and Java OOP principles with a focus on enhanced accessibility features.
